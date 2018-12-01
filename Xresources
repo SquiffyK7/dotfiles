@@ -1,0 +1,56 @@
+xterm*faceName: DejaVu Sans Mono Book
+xterm*faceSize: 9
+
+Xcursor.size: 32
+
+xterm*termName: xterm-256color
+xterm*antialias: true
+
+*.foreground: #F8F8F2
+*.background: #171717
+
+! Unkown colours
+!*.color0:     #000000
+*.color0:     #ff00ff
+!*.color7:     #BfBfBf
+*.color7:     #ff00ff
+!*.color8:     #4D4D4D
+*.color8:     #ff00ff
+!*.color15:    #E6E6E6
+*.color15:    #ff00ff
+
+! Git Untracked
+*.color1:     #FF5555
+
+! Git changes to be committed
+*.color2:     #50FA7B
+
+! Git commit name (in log)
+*.color3:     #F1Fa8C
+
+! less search background
+*.color4:     #BD93F9
+
+! Grep file name
+*.color5:     #FF79C6
+
+! Diff position markers
+*.color6:     #8BE9FD
+
+! Git log remote branch name in log (e.g. origin/master)
+*.color9:     #FF6E67
+
+! Less search foreground
+*.color11:    #F4F99D
+
+! directories
+*.color12:    #D75F5F
+
+! pacman -Ss repository name
+*.color13:    #FF92D0
+
+! links
+*.color14:    #87FFFF
+
+! executables
+*.color10:    #FFFF87
