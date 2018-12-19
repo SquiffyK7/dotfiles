@@ -23,6 +23,7 @@ export EDITOR="$VISUAL"
 export CHROME_BIN=/usr/bin/chromium
 
 alias ls='ls --color=auto'
+alias ll='ls -alhF'
 alias vi='vim --servername VIM'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
