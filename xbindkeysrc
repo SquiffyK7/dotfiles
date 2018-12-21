@@ -1,0 +1,11 @@
+"pamixer --increase 5"
+  XF86AudioRaiseVolume
+
+"pamixer --decrease 5"
+  XF86AudioLowerVolume
+
+"pamixer --set-volume 0"
+  XF86AudioMute
+
+"i3lock --color=171717"
+  Mod4 + o
