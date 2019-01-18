@@ -185,3 +185,4 @@ bar {
 exec xrdb ~/.Xresources
 
 exec --no-startup-id nm-applet
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
