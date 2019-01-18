@@ -28,6 +28,7 @@ alias vi='vim --servername VIM'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias py='python'
+alias ds='du --max-depth=1 -h | sort -rh'
 
 alias patch-caplin-one='patch ${HOME}/stash-stuff/fe/converted/apps/fxtrader/server/java/proxy-target-FXPro/src/main/webapp/WEB-INF/jetty-env.xml ${HOME}/caplin-one-changes'
 
