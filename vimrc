@@ -19,8 +19,13 @@ set cursorline
 
 set hlsearch
 
-colorscheme dracula
+set background=dark
+colorscheme hybrid
 
 execute pathogen#infect()
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+
+let $PAGER=''
+
+autocmd filetype gitcommit set textwidth=72

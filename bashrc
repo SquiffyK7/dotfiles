@@ -18,6 +18,8 @@ export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+#export PAGER="/usr/share/vim/vim81/macros/less.sh"
+#export MANPAGER="vim -M +MANPAGER -"
 
 #For running web tests at Caplin
 export CHROME_BIN=/usr/bin/chromium
@@ -29,6 +31,7 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias py='python'
 alias ds='du --max-depth=1 -h | sort -rh'
+#alias less='$PAGER'
 
 alias patch-caplin-one='patch ${HOME}/stash-stuff/fe/converted/apps/fxtrader/server/java/proxy-target-FXPro/src/main/webapp/WEB-INF/jetty-env.xml ${HOME}/caplin-one-changes'
 
@@ -41,4 +44,4 @@ rightprompt() {
 }
 
 #export PS1='\[$(STAT="$?"; tput sc; rightprompt "$STAT"; tput rc; tput setaf 2)\]\u@\h:\W\$\[$(tput sgr0)\] '
-export PS1='\[$(tput sc; tput rc; tput setaf 2)\]\u@\h:\W\$\[$(tput sgr0)\] '
+export PS1='\[$(tput sc; tput rc; tput setaf 139)\]\u@\h:\W\$\[$(tput sgr0)\] '

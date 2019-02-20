@@ -6,8 +6,8 @@ Xcursor.size: 32
 xterm*termName: xterm-256color
 xterm*antialias: true
 
-*.foreground: #F8F8F2
-*.background: #171717
+*.foreground: #bcbcbc
+*.background: #1c1c1c
 
 ! Unkown colours
 !*.color0:     #000000
@@ -19,38 +19,38 @@ xterm*antialias: true
 !*.color15:    #E6E6E6
 *.color15:    #ff00ff
 
-! Git Untracked
-*.color1:     #FF5555
+! Git Untracked (red)
+*.color1:     #d75f5f
 
-! Git changes to be committed
-*.color2:     #50FA7B
+! Git changes to be committed (green)
+*.color2:     #5fd787
 
 ! Git commit name (in log)
-*.color3:     #F1Fa8C
+*.color3:     #afaf5f
 
 ! less search background
 *.color4:     #BD93F9
 
-! Grep file name
+! Grep file name (purple)
 *.color5:     #FF79C6
 
 ! Diff position markers
 *.color6:     #8BE9FD
 
-! Git log remote branch name in log (e.g. origin/master)
-*.color9:     #FF6E67
+! Git log remote branch name in log (e.g. origin/master) (gold)
+*.color9:     #ffd75f
 
 ! Less search foreground
 *.color11:    #F4F99D
 
 ! directories
-*.color12:    #D75F5F
+*.color12:    #87afd7
 
 ! pacman -Ss repository name
 *.color13:    #FF92D0
 
 ! links
-*.color14:    #87FFFF
+*.color14:    #afffff
 
 ! executables
-*.color10:    #FFFF87
+*.color10:    #5fd787
