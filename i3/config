@@ -152,7 +152,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $green    #1DB954
+#set $green    #1DB954
+#set $dark     #111111
+#set $medium   #525252
+
+set $green    #5fd787
 set $dark     #111111
 set $medium   #525252
 
