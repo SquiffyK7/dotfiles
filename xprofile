@@ -1,1 +1,4 @@
+setxkbmap gb
+xrandr --dpi 192
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
