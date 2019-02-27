@@ -3,6 +3,7 @@ filetype plugin indent on
 set mouse=a
 
 set title
+set laststatus=2
 set number
 set rnu
 set ruler
@@ -22,9 +23,9 @@ set hlsearch
 set background=dark
 colorscheme hybrid
 
-execute pathogen#infect()
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+"execute pathogen#infect()
+"let g:prettier#autoformat = 0
+"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
 
 let $PAGER=''
 
