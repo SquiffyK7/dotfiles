@@ -6,6 +6,16 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+
+export NPM_CONFIG_PREFIX=$HOME/.npm-global
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export PATH="${JAVA_HOME}:${NPM_CONFIG_PREFIX}/bin:$PATH:${HOME}/bin"
+export TERMINAL=/usr/bin/xterm
+export VISUAL=vim
+export EDITOR="$VISUAL"
+#For running web tests at Caplin
+export CHROME_BIN=/usr/bin/chromium
+
 # Make less display colours
 export LESS=-R
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
@@ -16,13 +26,6 @@ export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
-export VISUAL=vim
-export EDITOR="$VISUAL"
-#export PAGER="/usr/share/vim/vim81/macros/less.sh"
-#export MANPAGER="vim -M +MANPAGER -"
-
-#For running web tests at Caplin
-export CHROME_BIN=/usr/bin/chromium
 
 alias ls='ls --color=auto'
 alias ll='ls -alhF'
@@ -31,7 +34,6 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias py='python'
 alias ds='du --max-depth=1 -h | sort -rh'
-#alias less='$PAGER'
 
 alias patch-caplin-one='patch ${HOME}/stash-stuff/fe/converted/apps/fxtrader/server/java/proxy-target-FXPro/src/main/webapp/WEB-INF/jetty-env.xml ${HOME}/caplin-one-changes'
 
