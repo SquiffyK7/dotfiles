@@ -33,7 +33,8 @@ font pango:DejaVu Sans Mono 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -162,7 +163,7 @@ set $medium   #525252
 
 # window colors
 #                       border     background   text        indicator
-client.focused          $dark      $dark        $green      $green
+client.focused          $dark      $medium      $green      $green
 client.unfocused        $dark      $dark        $medium     #ff0000
 client.focused_inactive $dark      $dark        $medium     $medium
 client.urgent           $dark      $green       $dark       #ff0000
@@ -186,7 +187,13 @@ bar {
         status_command i3status -c ~/.config/i3/status.conf
 }
 
-exec xrdb ~/.Xresources
+for_window [class="^.*"] border pixel 2
 
-exec --no-startup-id nm-applet
+exec xrdb ~/.Xresources
+exec_always --no-startup-id feh --bg-fill $HOME/Pictures/dota_wallpaper.jpg
+
+exec --no-startup-id compton -b
+exec --no-startup-id nm-applet &
+exec --no-startup-id blueman-applet &
+exec --no-startup-id redshift-gtk &
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
