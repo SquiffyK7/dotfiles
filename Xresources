@@ -6,51 +6,82 @@ Xcursor.size: 32
 xterm*termName: xterm-256color
 xterm*antialias: true
 
-*.foreground: #bcbcbc
-*.background: #1c1c1c
+Xft.dpi: 192
+
+! === gruvbox color scheme ===
+*background: #1d2021
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
+
+
+!*.foreground: #bcbcbc
+!*.background: #1c1c1c
 
 ! Unkown colours
 !*.color0:     #000000
-*.color0:     #ff00ff
+!*.color0:     #ff00ff
 !*.color7:     #BfBfBf
-*.color7:     #ff00ff
+!*.color7:     #ff00ff
 !*.color8:     #4D4D4D
-*.color8:     #ff00ff
+!*.color8:     #ff00ff
 !*.color15:    #E6E6E6
-*.color15:    #ff00ff
+!*.color15:    #ff00ff
 
 ! Git Untracked (red)
-*.color1:     #d75f5f
+!*.color1:     #d75f5f
 
 ! Git changes to be committed (green)
-*.color2:     #5fd787
+!*.color2:     #5fd787
 
 ! Git commit name (in log)
-*.color3:     #afaf5f
+!*.color3:     #afaf5f
 
 ! less search background
-*.color4:     #BD93F9
+!*.color4:     #BD93F9
 
 ! Grep file name (purple)
-*.color5:     #FF79C6
+!*.color5:     #FF79C6
 
 ! Diff position markers
-*.color6:     #8BE9FD
+!*.color6:     #8BE9FD
 
 ! Git log remote branch name in log (e.g. origin/master) (gold)
-*.color9:     #ffd75f
+!*.color9:     #ffd75f
 
 ! Less search foreground
-*.color11:    #F4F99D
+!*.color11:    #F4F99D
 
 ! directories
-*.color12:    #87afd7
+!*.color12:    #87afd7
 
 ! pacman -Ss repository name
-*.color13:    #FF92D0
+!*.color13:    #FF92D0
 
 ! links
-*.color14:    #afffff
+!*.color14:    #afffff
 
 ! executables
-*.color10:    #5fd787
+!*.color10:    #5fd787
