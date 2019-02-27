@@ -6,7 +6,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-
 export NPM_CONFIG_PREFIX=$HOME/.npm-global
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export PATH="${JAVA_HOME}:${NPM_CONFIG_PREFIX}/bin:$PATH:${HOME}/bin"
@@ -26,9 +25,8 @@ export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
-
 alias ls='ls --color=auto'
-alias ll='ls -alhF'
+alias ll='ls -alhF --group-directories-first'
 alias vi='vim --servername VIM'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
