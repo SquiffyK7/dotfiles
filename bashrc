@@ -9,11 +9,13 @@
 export NPM_CONFIG_PREFIX=$HOME/.npm-global
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export PATH="${JAVA_HOME}:${NPM_CONFIG_PREFIX}/bin:$PATH:${HOME}/bin"
-export TERMINAL=/usr/bin/xterm
+export TERMINAL=/usr/bin/termite
 export VISUAL=vim
 export EDITOR="$VISUAL"
 #For running web tests at Caplin
 export CHROME_BIN=/usr/bin/chromium
+export GDK_SCALE=2
+export GDK_DPI_SCALE=0.5
 
 # Make less display colours
 export LESS=-R
