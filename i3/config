@@ -191,7 +191,6 @@ for_window [class="^.*"] border pixel 2
 exec xrdb ~/.Xresources
 exec_always --no-startup-id feh --bg-fill $HOME/Pictures/dota_wallpaper.jpg
 
-exec --no-startup-id compton -b
 exec --no-startup-id nm-applet &
 exec --no-startup-id blueman-applet &
 exec --no-startup-id redshift-gtk &
