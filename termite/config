@@ -49,7 +49,7 @@ cursor_blink = off
 #background = #3f3f3f
 
 # 20% background transparency (requires a compositor)
-background = rgba(29, 32, 33, 0.95)
+background = rgba(29, 32, 33, 0.9)
 
 # If unset, will reverse foreground and background
 highlight = #2f2f2f
@@ -69,7 +69,7 @@ color5 = #b16286
 color13 = #d3869b
 color6 = #689d6a
 color14 = #8ec07c
-color7 = #a89984
+color7 = #bcbcbc
 color15 = #ebdbb2
 
 [hints]

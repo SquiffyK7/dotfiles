@@ -10,7 +10,7 @@ Xft.dpi: 192
 
 ! === gruvbox color scheme ===
 *background: #1d2021
-*foreground: #ebdbb2
+*foreground: #bcbcbc
 ! Black + DarkGrey
 *color0:  #282828
 *color8:  #928374
@@ -33,7 +33,7 @@ Xft.dpi: 192
 *color6:  #689d6a
 *color14: #8ec07c
 ! LightGrey + White
-*color7:  #a89984
+*color7:  #bcbcbc
 *color15: #ebdbb2
 
 
