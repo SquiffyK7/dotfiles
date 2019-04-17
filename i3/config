@@ -156,16 +156,18 @@ bindsym $mod+r mode "resize"
 #set $dark     #111111
 #set $medium   #525252
 
-set $green    #5fd787
-set $dark     #111111
-set $medium   #525252
+set $lblue    #9cdcfe
+set $dblue    #569cd6
+set $dark     #1e1e1e
+set $medium   #333333
+set $light    #cccccc
 
 # window colors
 #                       border     background   text        indicator
-client.focused          $dark      $medium      $green      $green
-client.unfocused        $dark      $dark        $medium     #ff0000
+client.focused          $dark      $dark        $lblue      $lblue
+client.unfocused        $dark      $dark        $light      #ff0000
 client.focused_inactive $dark      $dark        $medium     $medium
-client.urgent           $dark      $green       $dark       #ff0000
+client.urgent           $dark      $lblue       $dark       #ff0000
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -177,19 +179,20 @@ bar {
 
             background  #282828
             statusline  #B2B2B2
+            statusline  $light
             separator   #525252
 
             #                   border    background  text
-            focused_workspace   $dark     $dark       $green
-            inactive_workspace  $dark     $dark       $medium
-            urgent_workspace    $dark     $green      $dark
+            focused_workspace   $dark     $dark       $lblue
+            inactive_workspace  $dark     $dark       $light
+            urgent_workspace    $dark     $lblue      $dark
         }
 }
 
-for_window [class="^.*"] border pixel 2
+#for_window [class="^.*"] border pixel 2
 
 exec xrdb ~/.Xresources
-exec_always --no-startup-id feh --bg-fill $HOME/Pictures/dota_wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill /usr/share/lightdm-webkit/themes/litarvan/images/background.jpg
 
 exec --no-startup-id nm-applet &
 exec --no-startup-id blueman-applet &
