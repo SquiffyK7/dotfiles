@@ -1,6 +1,5 @@
 xcompmgr &
 setxkbmap gb
 xbindkeys
-xrandr --dpi 192
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
