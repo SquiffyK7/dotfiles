@@ -5,16 +5,16 @@ export TERM=xterm-256color
 export TERMINAL=/usr/bin/termite
 export VISUAL=vim
 export EDITOR="$VISUAL"
-#For running web tests at Caplin
+# For running web tests at Caplin
 export CHROME_BIN=/usr/bin/chromium
-export GDK_SCALE=2
-export GDK_DPI_SCALE=0.5
 export ANDROID_SDK_ROOT="${HOME}/Android/Sdk"
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+# History size
+export HISTSIZE=10000
 
 # Make less display colours
 export LESS=-R
@@ -34,6 +34,9 @@ alias diff='diff --color=auto'
 alias py='python'
 alias ds='du --max-depth=1 -h | sort -rh'
 alias less='less -N -M'
+alias tree='tree -C'
+
+alias andem='emulator -avd Pixel_2_API_28 -no-boot-anim -wipe-data -no-snapshot -no-audio'
 
 alias patch-caplin-one='patch ${HOME}/stash-stuff/fe/converted/apps/fxtrader/server/java/proxy-target-FXPro/src/main/webapp/WEB-INF/jetty-env.xml ${HOME}/caplin-one-changes'
 
