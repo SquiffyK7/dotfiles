@@ -43,7 +43,7 @@ function! StatusLineGit()
 endfunction
 
 set statusline=
-set statusline+=\ %{StatusLineGit()}
+"set statusline+=\ %{StatusLineGit()}
 set statusline+=\ %F
 set statusline+=\
-"set statusline+=%#LineNr#
+set statusline+=%#LineNr#
