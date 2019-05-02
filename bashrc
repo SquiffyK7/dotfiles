@@ -7,8 +7,6 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 #For running web tests at Caplin
 export CHROME_BIN=/usr/bin/chromium
-export GDK_SCALE=2
-export GDK_DPI_SCALE=0.5
 export ANDROID_SDK_ROOT="${HOME}/Android/Sdk"
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
