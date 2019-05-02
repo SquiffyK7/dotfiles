@@ -166,7 +166,7 @@ set $light    #cccccc
 #                       border     background   text        indicator
 client.focused          $dark      $dark        $lblue      $lblue
 client.unfocused        $dark      $dark        $light      #ff0000
-client.focused_inactive $dark      $dark        $medium     $medium
+client.focused_inactive $dark      $dark        $light      $medium
 client.urgent           $dark      $lblue       $dark       #ff0000
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -192,6 +192,7 @@ bar {
 #for_window [class="^.*"] border pixel 2
 
 exec xrdb ~/.Xresources
+
 exec_always --no-startup-id feh --bg-fill /usr/share/lightdm-webkit/themes/litarvan/images/background.jpg
 
 exec --no-startup-id nm-applet &
