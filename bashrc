@@ -13,6 +13,8 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+# Atlassian plugin binaries
+export PATH=$PATH:/opt/atlassian-plugin-sdk/bin
 # History size
 export HISTSIZE=10000
 
@@ -33,7 +35,7 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias py='python'
 alias ds='du --max-depth=1 -h | sort -rh'
-alias less='less -N -M'
+alias less='less -M'
 alias tree='tree -C'
 
 alias andem='emulator -avd Pixel_2_API_28 -no-boot-anim -wipe-data -no-snapshot -no-audio'
