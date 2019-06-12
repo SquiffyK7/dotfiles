@@ -16,7 +16,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Atlassian plugin binaries
 export PATH=$PATH:/opt/atlassian-plugin-sdk/bin
 # History size
-export HISTSIZE=10000
+export HISTSIZE=100000
 
 # Make less display colours
 export LESS=-R
