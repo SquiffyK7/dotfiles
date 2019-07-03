@@ -29,12 +29,12 @@ export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 alias ls='ls --color=auto'
-alias ll='ls -alhF --group-directories-first'
+alias ll='ls -halF'
 alias vi='vim --servername VIM'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias py='python'
-alias ds='du --max-depth=1 -h | sort -rh'
+alias ds='du --max-depth=1 -h | sort -h'
 alias less='less -M'
 alias tree='tree -C'
 
