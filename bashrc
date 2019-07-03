@@ -52,3 +52,4 @@ rightprompt() {
 
 #export PS1='\[$(STAT="$?"; tput sc; rightprompt "$STAT"; tput rc; tput setaf 2)\]\u@\h:\W\$\[$(tput sgr0)\] '
 export PS1='\[$(tput sc; tput rc; tput setaf 4)\]\u@\h:\W\$\[$(tput sgr0)\] '
+
