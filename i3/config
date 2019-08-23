@@ -191,6 +191,10 @@ bar {
 
 #for_window [class="^.*"] border pixel 2
 
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Thunar"] floating enable
+for_window [class="Blueman-manager"] floating enable
+
 exec xrdb ~/.Xresources
 
 exec_always --no-startup-id feh --bg-fill /usr/share/lightdm-webkit/themes/litarvan/images/background.jpg
