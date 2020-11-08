@@ -1,8 +1,7 @@
-export NPM_CONFIG_PREFIX=$HOME/.npm-global
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-export PATH="${JAVA_HOME}:${NPM_CONFIG_PREFIX}/bin:$PATH:${HOME}/bin"
+export PATH="${JAVA_HOME}:$PATH:${HOME}/bin"
 export TERM=xterm-256color
-export TERMINAL=/usr/bin/termite
+export TERMINAL=/usr/bin/lxterminal
 export VISUAL=vim
 export EDITOR="$VISUAL"
 # For running web tests at Caplin
@@ -13,10 +12,8 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-# Atlassian plugin binaries
-export PATH=$PATH:/opt/atlassian-plugin-sdk/bin
 # History size
-export HISTSIZE=100000
+export HISTSIZE=1000000
 
 # Make less display colours
 export LESS=-R
@@ -37,10 +34,9 @@ alias py='python'
 alias ds='du --max-depth=1 -h | sort -h'
 alias less='less -M'
 alias tree='tree -C'
-
-alias andem='emulator -avd Pixel_2_API_28 -no-boot-anim -wipe-data -no-snapshot -no-audio'
-
-alias patch-caplin-one='patch ${HOME}/stash-stuff/fe/converted/apps/fxtrader/server/java/proxy-target-FXPro/src/main/webapp/WEB-INF/jetty-env.xml ${HOME}/caplin-one-changes'
+alias fn='find . -name node_modules'
+alias fnr='find . -name node_modules | xargs rm -rf'
+alias install-nvm='source /usr/share/nvm/init-nvm.sh'
 
 rightprompt() {
   if [[ "$1" == 0 ]]; then
@@ -52,4 +48,3 @@ rightprompt() {
 
 #export PS1='\[$(STAT="$?"; tput sc; rightprompt "$STAT"; tput rc; tput setaf 2)\]\u@\h:\W\$\[$(tput sgr0)\] '
 export PS1='\[$(tput sc; tput rc; tput setaf 4)\]\u@\h:\W\$\[$(tput sgr0)\] '
-
