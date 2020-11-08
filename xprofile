@@ -1,4 +1,4 @@
-xcompmgr &
+picom -CGb --no-fading-openclose
 setxkbmap gb
 xbindkeys
 
