@@ -18,5 +18,6 @@ ln -sfn "${dir}/i3" "${HOME}/.config/"
 ln -sfn "${dir}/neofetch" "${HOME}/.config/"
 ln -sfn "${dir}/redshift" "${HOME}/.config/"
 ln -sfn "${dir}/termite" "${HOME}/.config/"
+ln -sfn "${dir}/xfce4-panel.xml" "${HOME}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml"
 
 ## TODO - wget vim colorscheme to vim directory
