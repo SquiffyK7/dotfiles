@@ -25,6 +25,8 @@ export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
+export en="--exclude-dir=node_modules"
+
 alias ls='ls --color=auto'
 alias ll='ls -halF'
 alias vi='vim --servername VIM'
@@ -37,6 +39,18 @@ alias tree='tree -C'
 alias fn='find . -name node_modules'
 alias fnr='find . -name node_modules | xargs rm -rf'
 alias install-nvm='source /usr/share/nvm/init-nvm.sh'
+
+link_package() {
+  for package in "$@"; do
+    grep -rn $package --include=package.json --exclude-dir=node_modules -l | xargs sed "s/\"$package\": \"file/\"$package\": \"link/" -i
+  done
+}
+
+unlink_package() {
+  for package in "$@"; do
+    grep -rn $package --include=package.json --exclude-dir=node_modules -l | xargs sed "s/\"$package\": \"link/\"$package\": \"file/" -i
+  done
+}
 
 rightprompt() {
   if [[ "$1" == 0 ]]; then
