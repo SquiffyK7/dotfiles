@@ -1,12 +1,12 @@
 xterm*faceName: DejaVu Sans Mono Book
 xterm*faceSize: 9
 
-Xcursor.size: 32
+!Xcursor.size: 32
 
 xterm*termName: xterm-256color
 xterm*antialias: true
 
-Xft.dpi: 144
+!Xft.dpi: 144
 
 *background: #1d2021
 *foreground: #bcbcbc

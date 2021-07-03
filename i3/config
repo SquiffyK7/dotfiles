@@ -16,7 +16,7 @@ set $mod Mod4
 # font pango:monospace 8
 # font pango:ubuntu monospace 10
 
-font pango:DejaVu Sans Mono 10
+font pango:Ubuntu Regular 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -39,7 +39,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+x exec dmenu_run
+bindsym $mod+x exec dmenu_run -fn "Ubuntu Regular-10"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -169,38 +169,25 @@ client.unfocused        $dark      $dark        $light      #ff0000
 client.focused_inactive $dark      $dark        $light      $medium
 client.urgent           $dark      $lblue       $dark       #ff0000
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        status_command i3status -c ~/.config/i3/status.conf
-        tray_output primary
-
-        colors {
-
-            background  #282828
-            statusline  #B2B2B2
-            statusline  $light
-            separator   #525252
-
-            #                   border    background  text
-            focused_workspace   $dark     $dark       $lblue
-            inactive_workspace  $dark     $dark       $light
-            urgent_workspace    $dark     $lblue      $dark
-        }
-}
-
-#for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 2
 
 for_window [class="Pavucontrol"] floating enable
-for_window [class="Thunar"] floating enable
 for_window [class="Blueman-manager"] floating enable
+for_window [class="Arandr"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [class="gscreenshot"] floating enable
+
+assign [class="jetbrains-idea"] 2
+for_window [class="Spotify"] move to workspace 5
 
 exec xrdb ~/.Xresources
 
-exec_always --no-startup-id feh --bg-fill /usr/share/lightdm-webkit/themes/litarvan/images/background.jpg
-
 exec --no-startup-id nm-applet &
 exec --no-startup-id blueman-applet &
-exec --no-startup-id redshift-gtk &
-exec --no-startup-id twmnd &
+#exec --no-startup-id xfce4-power-manager
+#exec --no-startup-id cbatticon -x xfce4-power-manager-settings &
+exec --no-startup-id cbatticon &
+exec --no-startup-id pasystray &
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+
+exec --no-startup-id xfce4-panel --disable-wm-check
