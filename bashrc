@@ -26,6 +26,7 @@ export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 export en="--exclude-dir=node_modules"
+export ijk="--include={*.java,*.kt}"
 
 alias ls='ls --color=auto'
 alias ll='ls -halF'
@@ -38,7 +39,6 @@ alias less='less -M'
 alias tree='tree -C'
 alias fn='find . -name node_modules'
 alias fnr='find . -name node_modules | xargs rm -rf'
-alias install-nvm='source /usr/share/nvm/init-nvm.sh'
 
 link_package() {
   for package in "$@"; do
@@ -62,3 +62,7 @@ rightprompt() {
 
 #export PS1='\[$(STAT="$?"; tput sc; rightprompt "$STAT"; tput rc; tput setaf 2)\]\u@\h:\W\$\[$(tput sgr0)\] '
 export PS1='\[$(tput sc; tput rc; tput setaf 4)\]\u@\h:\W\$\[$(tput sgr0)\] '
+
+#export GDK_SCALE=2
+#export GDK_DPI_SCALE=0.5
+source /usr/share/nvm/init-nvm.sh

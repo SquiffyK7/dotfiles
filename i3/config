@@ -16,7 +16,7 @@ set $mod Mod4
 # font pango:monospace 8
 # font pango:ubuntu monospace 10
 
-font pango:Ubuntu Regular 10
+font pango:Ubuntu Regular 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -178,6 +178,7 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="gscreenshot"] floating enable
 
 assign [class="jetbrains-idea"] 2
+assign [class="Code"] 2
 for_window [class="Spotify"] move to workspace 5
 
 exec xrdb ~/.Xresources
