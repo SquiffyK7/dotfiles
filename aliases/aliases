@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+alias ls='ls --color=auto'
+alias ll='ls -halF'
+alias vi='nvim'
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
+alias cat='bat'
+alias ip='ip -color=auto'
+alias py='python'
+alias ds='du --max-depth=1 -h | sort -h'
+alias less='less -M'
+alias tree='tree -C'
+alias fn='find . -name node_modules'
+alias fnr='find . -name node_modules | xargs rm -rf'
+alias rg='rg --hidden'

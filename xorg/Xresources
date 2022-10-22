@@ -1,0 +1,71 @@
+*background: #2c2b2a
+*foreground: #f7f7f0
+*.color0: #282c34
+*.color8: #282c34
+*.color1: #e06c75
+*.color9: #e06c75
+*.color2: #98c379
+*.color10: #98c379
+*.color3: #e5c07b
+*.color11: #e5c07b
+*.color4: #61afef
+*.color12: #61afef
+*.color5: #c67bdd
+*.color13: #c67bdd
+*.color6: #56b6c2
+*.color14: #56b6c2
+*.color7: #abb2bf
+*.color15: #f7f7f0
+
+URxvt.font: xft:UbuntuMono Nerd Font:size=12:antialias=true
+
+XTerm.vt100*font: xft:Hack Nerd Font:size=11:antialias=true, Xft:Noto Color Emoji:size12
+XTerm.vt100.scaleHeight: 1.00
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+
+xterm*VT100.Translations: #override \
+    Ctrl <Key> minus: smaller-vt-font() \n\
+    Ctrl <Key> plus: larger-vt-font() \n\
+    Ctrl <Key> 0: set-vt-font(d) \n\
+    Shift <KeyPress> Insert: insert-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
+    Ctrl <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY)
+
+URxvt.lineSpace: 2
+
+!URxvt*boldFont: xft:FantasqueSansMono-Bold:pixelsize=21:antialias=true
+!URxvt*italicFont: xft:FantasqueSansMono-Italic:pixelsize=21:antialias=true
+URxvt*letterSpace: 0
+
+URxvt.perl-ext-common: selection-to-clipboard,resize-font
+URxvt.clipboard.autocopy: true
+!URxvt.keysym.C-S: perl:clipboard:copy
+!
+URxvt.keysym.C-S-v: perl:clipboard:paste
+
+URxvt.keysym.C-minus: resize-font:smaller
+URxvt.keysym.C-equal: resize-font:bigger
+URxvt.keysym.C-0: resize-font:reset
+URxvt.keysym.C-question: resize-font:show
+URxvt.resize-font.step: 1
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+
+URxvt.scrollBar: false
+
+
+!URxvt*inheritPixmap: true
+!URxvt*transparent: true
+! URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
+!URxvt*shading: 20
+
+! Xft.autohint: 0
+! Xft.lcdfilter: lcddefault
+! Xft.hintstyle: hintslight
+! Xft.hinting: 1
+! Xft.antialias: 1
+! Xft.rgba: rgb

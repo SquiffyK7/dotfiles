@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+[ -f $DOTFILES/aliases/kubectl_aliases ] && source \
+   <(cat $DOTFILES/aliases/kubectl_aliases | sed -r 's/(kubectl.*) --watch/watch \1/g')
+alias kctx='kubectx'
+alias kns='kubens'
