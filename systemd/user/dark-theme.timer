@@ -1,0 +1,10 @@
+[Unit]
+Description=Set dark theme in the evening
+
+[Timer]
+OnCalendar=*-*-* 17:00:00
+; Persistent=true
+Unit=dark-theme.service
+
+[Install]
+WantedBy=timers.target

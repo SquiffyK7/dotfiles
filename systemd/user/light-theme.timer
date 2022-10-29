@@ -1,0 +1,10 @@
+[Unit]
+Description=Set light theme in the morning
+
+[Timer]
+OnCalendar=*-*-* 7:00:00
+; Persistent=true
+Unit=light-theme.service
+
+[Install]
+WantedBy=timers.target

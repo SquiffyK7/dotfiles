@@ -1,0 +1,9 @@
+[Unit]
+Description=Set light theme
+
+[Service]
+Type=simple
+ExecStart=%h/bin/light
+
+[Install]
+WantedBy=default.target

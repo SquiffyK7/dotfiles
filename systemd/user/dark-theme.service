@@ -1,0 +1,9 @@
+[Unit]
+Description=Set dark theme
+
+[Service]
+Type=simple
+ExecStart=%h/bin/dark
+
+[Install]
+WantedBy=default.target
